@@ -1,3 +1,6 @@
 [submodule "/Users/eraser/dotfiles/vimfiles/vundle.git"]
 	path = /Users/eraser/dotfiles/vimfiles/vundle.git
 	url = http://github.com/gmarik/vundle.git
+[submodule "/home/muranaka/dotfiles/vimfiles/vundle.git"]
+	path = /home/muranaka/dotfiles/vimfiles/vundle.git
+	url = http://github.com/gmarik/vundle.git
