@@ -10,6 +10,9 @@ filetype plugin indent on
 set title "編集中のファイル名を表示
 syntax on
 
+set number
+set cursorline
+
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 Bundle 'gmarik/vundle'
