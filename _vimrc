@@ -16,5 +16,6 @@ set cursorline
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 Bundle 'gmarik/vundle'
+Bundle 'The-NERD-tree'
 Bundle 'tpope/vim-rails'
 Bundle 'endwise.vim'
