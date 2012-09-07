@@ -4,6 +4,9 @@ set nocompatible
 filetype off
 filetype plugin on
 
+set encoding=utf-8
+set fileencodings=sjis,iso-2022-jp,euc-jp
+
 " ファイル形式検出、プラグイン、インデントを ON
 filetype plugin indent on 
 
