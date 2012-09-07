@@ -1,12 +1,35 @@
-autoload -U compinit
-compinit -u 
+alias sudo="sudo env PATH=$PATH"
 export LANG=ja_JP.UTF-8
-PROMPT="%/%% "
-PROMPT2="%_%% "
-SPROMPT="%r is correct? [n,y,a,e]: "  
+#PROMPT="%/%% "
+#PROMPT2="%_%% "
+#SPROMPT="%r is correct? [n,y,a,e]: "  
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt hist_ignore_dups     # ignore duplication command history list
 # コマンド訂正
 setopt correct
+
+# プロンプトのカラー表示を有効
+autoload -U colors
+colors
+
+# デフォルトの補完機能を有効
+autoload -U compinit
+compinit
+
+# 補完時にヒストリを自動的に展開する。
+setopt hist_expand
+
+# 履歴ファイルに時刻を記録
+setopt extended_history
+
+# 履歴をインクリメンタルに追加
+setopt inc_append_history
+
+# 直前と同じコマンドラインはヒストリに追加しない
+setopt hist_ignore_dups
+
+# デフォルトの補完機能を有効
+autoload -U compinit
+compinit
