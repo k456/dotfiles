@@ -22,3 +22,4 @@ Bundle 'gmarik/vundle'
 Bundle 'The-NERD-tree'
 Bundle 'tpope/vim-rails'
 Bundle 'endwise.vim'
+set ambiwidth=double
