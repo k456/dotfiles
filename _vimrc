@@ -5,7 +5,7 @@ filetype off
 filetype plugin on
 
 set encoding=utf-8
-set fileencodings=sjis,iso-2022-jp,euc-jp
+set fileencodings=utf-8,sjis,iso-2022-jp,euc-jp
 
 " ファイル形式検出、プラグイン、インデントを ON
 filetype plugin indent on 
@@ -22,4 +22,8 @@ Bundle 'gmarik/vundle'
 Bundle 'The-NERD-tree'
 Bundle 'tpope/vim-rails'
 Bundle 'endwise.vim'
+Bundle 'Shougo/neocomplcache'
 set ambiwidth=double
+
+"neocomplcache有効
+let g:neocomplcache_enable_at_startup = 1
