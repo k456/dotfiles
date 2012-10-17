@@ -23,7 +23,12 @@ Bundle 'The-NERD-tree'
 Bundle 'tpope/vim-rails'
 Bundle 'endwise.vim'
 Bundle 'Shougo/neocomplcache'
+Bundle 'vim-ruby/vim-ruby'
 set ambiwidth=double
 
 "neocomplcache有効
 let g:neocomplcache_enable_at_startup = 1
+
+" 検索時のハイライト設定 Esc連打でハイライトを消す
+set hlsearch
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
