@@ -32,3 +32,5 @@ let g:neocomplcache_enable_at_startup = 1
 " 検索時のハイライト設定 Esc連打でハイライトを消す
 set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+source $VIMRUNTIME/macros/matchit.vim
