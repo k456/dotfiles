@@ -28,6 +28,7 @@ set ambiwidth=double
 
 "neocomplcache有効
 let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_force_overwrite_completefunc = 1
 
 " 検索時のハイライト設定 Esc連打でハイライトを消す
 set hlsearch
