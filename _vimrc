@@ -40,8 +40,8 @@ source $VIMRUNTIME/macros/matchit.vim
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
 
 Bundle 'kchmck/vim-coffee-script'
 
