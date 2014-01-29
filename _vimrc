@@ -34,3 +34,15 @@ set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 source $VIMRUNTIME/macros/matchit.vim
+
+" vim-cofee-script
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'kchmck/vim-coffee-script'
+
+syntax enable
+filetype plugin indent on
