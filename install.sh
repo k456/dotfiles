@@ -5,9 +5,24 @@ dotfiles_dir=$(cd $(dirname $0) && pwd)
 cd ${dotfiles_dir}
 git submodule init
 git submodule update
-ln -s ${dotfiles_dir}/_vimrc ~/.vimrc
-ln -s ${dotfiles_dir}/vimfiles ~/.vim
-ln -s ${dotfiles_dir}/_ctags ~/.ctags
-ln -s ${dotfiles_dir}/_zshrc ~/.zshrc
+if [ ! -e ~/.vimrc ]; then
+  ln -s ${dotfiles_dir}/_vimrc ~/.vimrc
+fi	
+
+if [ ! -e ~/.vim ]; then
+  ln -s ${dotfiles_dir}/vimfiles ~/.vim
+fi
+
+if [ ! -e ~/.ctags ]; then
+  ln -s ${dotfiles_dir}/_ctags ~/.ctags
+fi
+
+if [ ! -e ~/.zshrc ]; then
+  ln -s ${dotfiles_dir}/_zshrc ~/.zshrc
+fi
+
+if [ ! -e ~/.screenrc ]; then
+  ln -s ${dotfiles_dir}/_screenrc ~/.screenrc
+fi
 cd ${orig_dir}
 vim +BundleInstall +qall
