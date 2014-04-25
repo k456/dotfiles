@@ -24,5 +24,10 @@ fi
 if [ ! -e ~/.screenrc ]; then
   ln -s ${dotfiles_dir}/_screenrc ~/.screenrc
 fi
+
+if [ ! -e ~/.tmux.conf ];then
+  ln -s ${dotfiles_dir}/_tmux.conf ~/.tmux.conf	
+fi
+
 cd ${orig_dir}
 vim +BundleInstall +qall
