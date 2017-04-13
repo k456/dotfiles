@@ -45,6 +45,7 @@ filetype off
 " call vundle#rc()
 
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'gnperdue/vim-asciidoc'
 
 syntax enable
 filetype plugin indent on
