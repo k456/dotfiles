@@ -16,14 +16,14 @@ syntax on
 set number
 set cursorline
 
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'The-NERD-tree'
-Bundle 'tpope/vim-rails'
-Bundle 'endwise.vim'
-Bundle 'Shougo/neocomplcache'
-Bundle 'vim-ruby/vim-ruby'
+set rtp+=~/.vim/VundleVim.vim.git
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'The-NERD-tree'
+Plugin 'tpope/vim-rails'
+Plugin 'endwise.vim'
+Plugin 'Shougo/neocomplcache'
+Plugin 'vim-ruby/vim-ruby'
 set ambiwidth=double
 
 "neocomplcache有効
@@ -44,8 +44,8 @@ filetype off
 " set rtp+=~/.vim/bundle/vundle/
 " call vundle#rc()
 
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'gnperdue/vim-asciidoc'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'gnperdue/vim-asciidoc'
 
 syntax enable
 filetype plugin indent on
