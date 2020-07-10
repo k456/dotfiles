@@ -29,6 +29,10 @@ if [ ! -e ~/.tmux.conf ];then
   ln -s ${dotfiles_dir}/_tmux.conf ~/.tmux.conf	
 fi
 
+if [ ! -e ~/.gitconfig ];then
+  ln -s ${dotfiles_dir}/_gitconfig ~/.gitconfig
+fi
+
 #if [ ! -e ~/.tmux/plugins/tpm ];then
 #  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #  ~/.tmux/plugins/tpm/bin/install_plugins
