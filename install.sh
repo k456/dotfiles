@@ -25,8 +25,21 @@ if [ ! -e ~/.screenrc ]; then
   ln -s ${dotfiles_dir}/_screenrc ~/.screenrc
 fi
 
+
+# tmux のバージョンを取得
+tmux_version=$(tmux -V | cut -d ' ' -f 2)
+
 if [ ! -e ~/.tmux.conf ];then
-  ln -s ${dotfiles_dir}/_tmux.conf ~/.tmux.conf	
+  # tmux バージョンに応じてリンク先を変える
+  if [[ $(echo "$tmux_version < 2.1" | bc) -eq 1 ]]; then
+    # tmux 1.8 用の設定ファイルをリンク
+    ln -s ${dotfiles_dir}/_tmux.conf.18 ~/.tmux.conf
+    #echo "Linked tmux.conf for version 1.8"
+  else
+    # tmux 2.1 以降用の設定ファイルをリンク
+    ln -s ${dotfiles_dir}/_tmux.conf.new ~/.tmux.conf
+    #echo "Linked tmux.conf for version 2.1 or later"
+  fi
 fi
 
 if [ ! -e ~/.gitconfig ];then
